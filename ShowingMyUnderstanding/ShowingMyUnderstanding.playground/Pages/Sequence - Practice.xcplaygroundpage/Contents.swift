@@ -27,11 +27,17 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 300, height: 300)
+let canvas = Canvas(width: 360, height: 360)
 
 // Replace this comment and add your code below...
 
+canvas.defaultLineWidth = 75
 
+canvas.lineColor = Color(hue: 80, saturation: 100, brightness: 90, alpha: 50)
+canvas.drawLine(fromX: 85, fromY: 60, toX: 85, toY: 300)
+canvas.drawLine(fromX: 85, fromY: 300, toX: 180, toY: 60)
+canvas.drawLine(fromX: 275, fromY: 300, toX: 180, toY: 60)
+canvas.drawLine(fromX: 275, fromY: 300, toX: 275, toY: 60)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
