@@ -18,18 +18,34 @@
 import Cocoa
 import PlaygroundSupport
 
+
+
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-for x in stride(from: 1, through: 10, by: 1)
-
-
-let x = random(from: 0, toButNotIncluding: 10)
-if x == 5{
-    canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 200, height: 200)
+canvas.lineColor = Color.red
+//loop
+for y in stride(from: 1, through: 1000, by: 20){
+    canvas.drawLine(fromX: 150, fromY: 150, toX: 0, toY: y)
+}
+for y in stride(from: 1, through: 1000, by: 20){
+    canvas.drawLine(fromX: 150, fromY: 150, toX: 300, toY: y)
 }
 
-if x != 5{
+for y in stride(from: 1, through: 1000, by: 20){
+    canvas.drawLine(fromX: 150, fromY: 150, toX: 150, toY: y)
+}
+
+
+
+
+let x = random(from: 0, toButNotIncluding: 3)
+if x == 1{
+    canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 200, height: 200)
+}
+canvas.fillColor = Color.red
+
+if x != 1{
     canvas.drawEllipse(centreX: 150, centreY: 150, width: 100, height: 100)
 }
 
