@@ -23,7 +23,11 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Replace this comment and add your code below...
+//
+canvas.defaultLineWidth = 50
+canvas.drawLine(fromX: 150, fromY: 0, toX: 150, toY: 300)
+canvas.drawLine(fromX: 0, fromY: 150, toX: 300, toY: 150)
+
 
 /*:
  ## Template code

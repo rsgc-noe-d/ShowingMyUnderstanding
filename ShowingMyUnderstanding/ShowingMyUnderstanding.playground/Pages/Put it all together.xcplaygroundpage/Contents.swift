@@ -21,6 +21,19 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
+for x in stride(from: 1, through: 10, by: 1)
+
+
+let x = random(from: 0, toButNotIncluding: 10)
+if x == 5{
+    canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 200, height: 200)
+}
+
+if x != 5{
+    canvas.drawEllipse(centreX: 150, centreY: 150, width: 100, height: 100)
+}
+
+
 // Replace this comment and add your code below...
 
 
